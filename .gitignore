@@ -67,3 +67,8 @@ node_modules/
 # assets files
 portfolio.*
 docs/
+
+# os files
+.DS_STORE
+Icon?
+._*

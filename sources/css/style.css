@@ -1,0 +1,143 @@
+@import url("/css/colors.css");
+@import url("/css/typography.css");
+
+
+:root {
+  /* Screen Sizes */
+  --ldpi: 320px;
+  --mdpi: 480px;
+  --hdpi: 600px;
+  --xhdpi: 768px;
+  --xxhdpi: 992px;
+  --xxxhdpi: 1382px;
+
+  /* dimens.xml */
+  --padding: 64px;
+  --card-radius: 4px;
+}
+
+@media (max-width: 768px) {
+   :root {
+    --padding: 32px;
+  }
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  background: url(/img/bg-header.gif) bottom center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.app-bar {
+  background-color: black;
+  color: var(--textColorInverse);
+  position: absolute;
+}
+
+.app-bar * {
+  color: var(--textColorInverse);
+}
+
+/* only apply this style if below top app bar */
+.mdc-top-app-bar {
+  z-index: 7;
+}
+
+.padding-b {
+  padding-bottom: var(--padding);
+}
+
+.app-fab--absolute {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+@media(min-width: 1024px) {
+   .app-fab--absolute {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  background: linear-gradient(0deg, rgba(182,194,183,0.5) 15%, black 100%);
+  margin: auto;
+  display: table;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: var(--padding);
+}
+
+.mdc-button__label {
+
+}
+
+.header-img {
+  width: 64px;
+  margin-bottom: 16px;
+}
+
+.main-section {
+  background-color: var(--mdc-theme-background);
+  width: 100%;
+  overflow: hidden;
+  padding: var(--padding);
+}
+
+.contact-header {
+  background-image: url('/img/section-bg2.jpg');
+  background-size: cover;
+  padding: var(--padding);
+  text-align: center;
+}
+
+.main-section#contact {
+  background-image: url('/img/bg-map.png');
+}
+
+.alabaster {
+  background-color: var(--mdc-theme-surface);
+}
+
+footer {
+  background-color: var(--mdc-theme-background);
+  background-image: url('/img/bg-footer.png');
+  color: var(--textColorInverse);
+  text-align: center;
+  padding: var(--padding);
+}

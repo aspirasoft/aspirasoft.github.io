@@ -72,3 +72,6 @@ docs/
 .DS_STORE
 Icon?
 ._*
+
+# IntelliJ files
+.idea/

@@ -1,0 +1,22 @@
+.store-img {
+    width: 170px;
+    padding-bottom: 10px;
+}
+
+.icon-box {
+    color: #fff;
+    background-color: #1a5671;
+    vertical-align: middle;
+    border-radius: 50px !important;
+    padding: 12px;
+    display: inline-block;
+    width: 60px;
+    height: 60px
+}
+
+.material-icons.dp36 {
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+    vertical-align: middle
+}

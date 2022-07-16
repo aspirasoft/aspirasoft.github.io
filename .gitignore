@@ -75,3 +75,16 @@ Icon?
 
 # IntelliJ files
 .idea/
+
+# Local files
+.jekyll-cache/
+_config.yml
+_includes/
+_layouts/
+_pages/
+Gemfile
+Gemfile.lock
+assets/
+browserconfig.xml
+manifest.json
+pwabuilder-sw.js
